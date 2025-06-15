@@ -1,1 +1,1 @@
-type MyOmit<T, K> = any
+type MyOmit<T, K extends keyof T> = Omit<T, K>
